@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6WN-fK-tvW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gVA-QP-8TH">
+            <objects>
+                <navigationController id="6WN-fK-tvW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tIy-f1-3Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1AW-a9-uXg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LO6-se-rzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-918" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAn-Ok-oqb">
+                                <rect key="frame" x="62" y="313.5" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="C0t-Mj-g22"/>
+                                    <constraint firstAttribute="height" constant="40" id="fCJ-cY-l3P"/>
+                                </constraints>
+                                <state key="normal" title="3. 通过item操作第2步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openOptionByItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uU4-xW-ouV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-tL-EZk">
+                                <rect key="frame" x="62" y="241" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2. 用户选择copy,print,quicklook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openOptionForUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kd6-sV-nG0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BO7-A4-E6G">
+                                <rect key="frame" x="62" y="382" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="4. 通过其他应用程序打开（没有第二步）">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Sm-mJ-E3f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lU-0I-lT1">
+                                <rect key="frame" x="62" y="173" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="1. 直接预览文件">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FkE-xR-DlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v3-Ak-4E3">
+                                <rect key="frame" x="62" y="451" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Hiq-eL-mRG"/>
+                                </constraints>
+                                <state key="normal" title="5. 通过item操作第4步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInMenuByItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6X-IO-lrc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7v3-Ak-4E3" firstAttribute="trailing" secondItem="BO7-A4-E6G" secondAttribute="trailing" id="0lM-cU-hGa"/>
+                            <constraint firstItem="BO7-A4-E6G" firstAttribute="height" secondItem="2lU-0I-lT1" secondAttribute="height" id="1z6-89-3N5"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Dd-q8-lnm"/>
+                            <constraint firstItem="7v3-Ak-4E3" firstAttribute="leading" secondItem="BO7-A4-E6G" secondAttribute="leading" id="8Z5-cb-wVU"/>
+                            <constraint firstItem="jSP-tL-EZk" firstAttribute="height" secondItem="2lU-0I-lT1" secondAttribute="height" id="OwL-v4-Doj"/>
+                            <constraint firstItem="BO7-A4-E6G" firstAttribute="top" secondItem="KAn-Ok-oqb" secondAttribute="bottom" constant="28.5" id="Rta-jB-QQa"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="top" secondItem="jSP-tL-EZk" secondAttribute="bottom" constant="32.5" id="TTH-jz-hk2"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="height" secondItem="2lU-0I-lT1" secondAttribute="height" id="UBO-u2-MBr"/>
+                            <constraint firstItem="jSP-tL-EZk" firstAttribute="trailing" secondItem="2lU-0I-lT1" secondAttribute="trailing" id="Wy5-1v-hsa"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="trailing" secondItem="2lU-0I-lT1" secondAttribute="trailing" id="Xne-5u-jjH"/>
+                            <constraint firstItem="jSP-tL-EZk" firstAttribute="top" secondItem="2lU-0I-lT1" secondAttribute="bottom" constant="28" id="eag-U3-oaF"/>
+                            <constraint firstItem="BO7-A4-E6G" firstAttribute="trailing" secondItem="2lU-0I-lT1" secondAttribute="trailing" id="g3I-d6-uEm"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="leading" secondItem="2lU-0I-lT1" secondAttribute="leading" id="igx-3s-nFz"/>
+                            <constraint firstItem="7v3-Ak-4E3" firstAttribute="top" secondItem="BO7-A4-E6G" secondAttribute="bottom" constant="29" id="pc8-Zn-YjV"/>
+                            <constraint firstItem="KAn-Ok-oqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sVi-bH-orl"/>
+                            <constraint firstItem="jSP-tL-EZk" firstAttribute="leading" secondItem="2lU-0I-lT1" secondAttribute="leading" id="ufq-uf-WZ2"/>
+                            <constraint firstItem="BO7-A4-E6G" firstAttribute="leading" secondItem="2lU-0I-lT1" secondAttribute="leading" id="yVj-cj-NP1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="va9-yf-g3m"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-185" y="127"/>
+        </scene>
+    </scenes>
+</document>
