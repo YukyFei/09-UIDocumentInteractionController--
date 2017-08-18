@@ -77,16 +77,21 @@
 }
 
 #pragma mark 代理方法
+//为快速预览指定控制器
 - (UIViewController*)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController*)controller
 {
     NSLog(@"%@",NSStringFromSelector(_cmd));
     return self;
 }
+
+//为快速预览指定View
 - (UIView*)documentInteractionControllerViewForPreview:(UIDocumentInteractionController*)controller
 {
     NSLog(@"%@",NSStringFromSelector(_cmd));
     return self.view;
 }
+
+//为快速预览指定显示范围
 - (CGRect)documentInteractionControllerRectForPreview:(UIDocumentInteractionController*)controller
 {
     NSLog(@"%@",NSStringFromSelector(_cmd));
@@ -96,9 +101,5 @@
 
 //点击预览窗口的“Done”(完成)按钮时调用
 
-- (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController*)_controller
-{
-    
-}
 
 @end
